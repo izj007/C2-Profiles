@@ -130,7 +130,7 @@ process-inject {
         # determine how to execute the injected code
         execute {
             CreateThread "ntdll.dll!RtlUserThreadStart";
-			CreateRemoteThread "ntdll.dll!RtlUserThreadStart";
+	    CreateRemoteThread "ntdll.dll!RtlUserThreadStart";
             SetThreadContext;
             RtlCreateUserThread;
         }
