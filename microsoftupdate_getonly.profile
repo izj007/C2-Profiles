@@ -131,7 +131,7 @@ process-inject {
         execute {
             CreateThread "ntdll.dll!RtlUserThreadStart";
 	    CreateRemoteThread "ntdll.dll!RtlUserThreadStart";
-            SetThreadContext;
+	    SetThreadContext;
             RtlCreateUserThread;
         }
 }
